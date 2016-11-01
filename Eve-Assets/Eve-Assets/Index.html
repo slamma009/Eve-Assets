@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="bang.app" ng-controller="AppCtrl">
+    <script src="scripts/angular.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="App/Mining/Mining.js"></script>
+    <script src="App/DataAccess/dataAcess.js"></script>
+    <script src="App/DataAccess/oreDataAccess.js"></script>
+    <h1>Test</h1>
+
+    <p><a href="#/">Main</a></p>
+
+    <a href="#/Mining">Red</a>
+
+    <div ng-view></div>
+
+    <p>Click on the links to navigate to "red.htm", "green.htm", "blue.htm", or back to "main.htm"</p>
+</body>
+</html>
