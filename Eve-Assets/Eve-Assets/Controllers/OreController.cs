@@ -1,5 +1,4 @@
-﻿using Eve_Assets.Mapping;
-using Eve_Assets.Models.Domain;
+﻿using Eve_Assets.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,20 @@ namespace Eve_Assets.Controllers
         [HttpGet, Route("api/ore/getAllOres")]
         public IEnumerable<Ore> GetAllOres()
         {
-            var ores = OreMapper.GetAllOres();
+            List<Ore> ores = new List<Ore>();
+            var ore = new Ore();
+            ore.Name = "Veldspar";
+            ores.Add(ore);
+
+            ore = new Ore();
+            ore.Name = "Pyroxeres";
+            ores.Add(ore);
+
+            ore = new Ore();
+            ore.Name = "Scordite";
+            ores.Add(ore);
+
+            ores = OreRepository.GetAllOres();
             return ores;
         }
     }
