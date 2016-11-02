@@ -22,7 +22,12 @@
             <li><a href="#/">Main</a></li>
             <li><a href="#/Mining">Mining</a></li>
             <li><a href="#/">Assets</a></li>
-        </ul>        
+        </ul>   
+        <div style="float:right">
+            <select name="characterSelect" id="characterSelect" ng-model="selectedCharacter">
+                <option ng-repeat="character in allCharacters" value="{{character}}">{{character.CharacterName}}</option>
+            </select>
+        </div>     
     </div>
     <div ng-view class="content"></div>
 </body>

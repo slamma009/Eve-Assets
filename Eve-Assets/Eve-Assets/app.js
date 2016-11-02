@@ -49,5 +49,8 @@ angular.module('bang.app', ['ngRoute'
     $scope.$on('CharacterListChanged', function () {
         $scope.allCharacters = characterService.list();
     });
-    
+
+    $scope.$watch('selectedCharacter', function () {
+        characterService.select(selectedCharacter);
+    });
 });
