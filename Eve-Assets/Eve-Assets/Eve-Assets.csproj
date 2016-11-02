@@ -124,7 +124,8 @@
     <Content Include="App\Mining\Mining.html" />
     <Content Include="App\Mining\Mining.js" />
     <Content Include="Global.asax" />
-    <Content Include="Index.html" />
+    <Content Include="App\Index-before.html" />
+    <Content Include="index.html" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\angular.js" />
