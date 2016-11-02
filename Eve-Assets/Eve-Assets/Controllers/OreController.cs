@@ -12,21 +12,8 @@ namespace Eve_Assets.Controllers
         [HttpGet, Route("api/ore/getAllOres")]
         public IEnumerable<Ore> GetAllOres()
         {
-            List<Ore> ores = new List<Ore>();
-            var ore = new Ore();
-            ore.Name = "Veldspar";
-            ores.Add(ore);
-
-            ore = new Ore();
-            ore.Name = "Pyroxeres";
-            ores.Add(ore);
-
-            ore = new Ore();
-            ore.Name = "Scordite";
-            ores.Add(ore);
-
-            ores = OreRepository.GetAllOres();
-            return ores;
+            var ores = OreRepository.GetAllOres();
+            return ores.ToArray();
         }
     }
 }

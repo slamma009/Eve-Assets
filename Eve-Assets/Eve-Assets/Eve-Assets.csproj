@@ -139,9 +139,9 @@
     <Compile Include="Models\MineralsRefined.cs" />
     <Compile Include="Models\Mineral.cs" />
     <Compile Include="Models\Ore.cs" />
-    <Compile Include="OreDbContext.cs" />
-    <Compile Include="OreDbContextSeeder.cs" />
-    <Compile Include="OreRepository.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="DbContextSeeder.cs" />
+    <Compile Include="Repositories\OreRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

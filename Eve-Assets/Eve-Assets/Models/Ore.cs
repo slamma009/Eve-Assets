@@ -12,7 +12,7 @@ namespace Eve_Assets.Models
         public string Name { get; set; }
 
         public int RefineAmount { get; set; }
-
-        public List<MineralsRefined> Minerals { get; set; }
+        
+        public ICollection<MineralsRefined> Minerals { get; set; }
     }
 }

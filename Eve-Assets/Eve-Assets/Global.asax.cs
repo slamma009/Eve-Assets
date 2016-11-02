@@ -12,7 +12,7 @@ namespace Eve_Assets
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new OreDbContextSeeder());
+            Database.SetInitializer(new DbContextSeeder());
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
