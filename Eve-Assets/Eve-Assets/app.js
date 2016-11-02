@@ -4,7 +4,7 @@ angular.module('bang.app', ['ngRoute'
     , 'bang.dataAccess'
     , 'bang.characterSheet'
 ])
-.factory('characters', function () {
+.factory('characterService', function ($rootScope) {
     /* Factory for all characters */
     //list of all characters
     var characters = [];
@@ -16,6 +16,7 @@ angular.module('bang.app', ['ngRoute'
     //add a character to the list
     charactersService.add = function (character) {
         characters.push(character);
+        $rootScope.$broadcast('CharacterListChanged');
     };
     //sets the selected character
     charactersService.select = function (character) {
@@ -42,6 +43,11 @@ angular.module('bang.app', ['ngRoute'
         templateUrl: "App/Mining/Mining.html"
     })
 })
-.controller('AppCtrl', function ($scope) {
+.controller('AppCtrl', function ($scope, characterService) {
     $scope.PageTitle = "Eve Assets";
+
+    $scope.$on('CharacterListChanged', function () {
+        $scope.allCharacters = characterService.list();
+    });
+    
 });

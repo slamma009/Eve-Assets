@@ -1,9 +1,9 @@
 ﻿angular.module('bang.characterSheet', [])
 
-.controller('CharacterSheetController', ['$scope', 'characters', 'characterDataAccess',
-    function ($scope, characters, characterDataAccess) {
+.controller('CharacterSheetController', ['$scope', 'characterService', 'characterDataAccess',
+    function ($scope, characterService, characterDataAccess) {
         //get a list of current characters
-        $scope.allCharacters = characters.list();
+        $scope.allCharacters = characterService.list();
 
         //if the list is empty, lets grab a list of them (temporarily hardcoded)
         if ($scope.allCharacters.length == 0) {
@@ -11,14 +11,14 @@
             $scope.characterPromise.then(function (data) {
                 if (data.data !== undefined) {
                     //select the first character (temporarily harcoded)
-                    characters.select(data.data[0]);
+                    characterService.select(data.data[0]);
 
                     for (var i = 0; i < data.data.length; ++i) {
-                        characters.add(data.data[i])
+                        characterService.add(data.data[i])
                     }
                 }
                 //get a list with the new characters
-                $scope.allCharacters = characters.list();
+                $scope.allCharacters = characterService.list();
             });
         }
     }]
