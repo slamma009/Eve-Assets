@@ -1,3 +1,4 @@
 ﻿angular.module('bang.dataAccess', [
-    'bang.oreDataAccess'
+    , 'bang.oreDataAccess'
+    , 'bang.characterDataAccess'
 ]);
