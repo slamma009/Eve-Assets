@@ -1,6 +1,14 @@
 ﻿<div ng-app="bang.characterSheet" ng-controller="CharacterSheetController">
     <div ng-repeat="character in allCharacters">
-        <img src="https://image.eveonline.com/Character/{{character.CharacterId}}_128.jpg" />
-        <p>{{character.CharacterName}}</p>
+        <div class="row" style="margin:5px;">
+            <div class="col-xs-3">
+                <div style="width:100%; max-width:200px;">
+                    <img src="https://image.eveonline.com/Character/{{character.CharacterId}}_256.jpg" width="100%" />
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <p>{{character.CharacterName}}</p>
+            </div>
+        </div>
     </div>
 </div>

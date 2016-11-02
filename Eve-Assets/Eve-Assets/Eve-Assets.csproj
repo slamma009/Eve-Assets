@@ -124,6 +124,7 @@
     <Content Include="App\DataAccess\characterDataAccess.js" />
     <Content Include="App\DataAccess\dataAcess.js" />
     <Content Include="App\DataAccess\oreDataAccess.js" />
+    <Content Include="App\main.css" />
     <Content Include="App\Mining\Mining.html" />
     <Content Include="App\Mining\Mining.js" />
     <Content Include="Global.asax" />

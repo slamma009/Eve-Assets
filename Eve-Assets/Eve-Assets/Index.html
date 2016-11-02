@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Eve Assets</title>
 	<meta charset="utf-8" />
-</head>
-<body ng-app="bang.app" ng-controller="AppCtrl">
     <script src="scripts/angular.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
@@ -14,12 +12,19 @@
     <script src="/App/DataAccess/dataAcess.js"></script>
     <script src="/App/DataAccess/oreDataAccess.js"></script>
     <script src="/App/Mining/Mining.js"></script>
-    <h1>Test</h1>
 
-    <p><a href="#/">Main</a></p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="App/main.css">
+</head>
+<body ng-app="bang.app" ng-controller="AppCtrl">
+    <div class="nav">
+        <ul>
+            <li><a href="#/">Main</a></li>
+            <li><a href="#/Mining">Mining</a></li>
+            <li><a href="#/">Assets</a></li>
+        </ul>        
+    </div>
 
-    <a href="#/Mining">Mining</a>
-
-    <div ng-view></div>
+    <div ng-view class="content"></div>
 </body>
 </html>
