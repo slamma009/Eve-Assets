@@ -1,0 +1,10 @@
+﻿.character-row {
+    background-color:#e2e2e2;
+    border-radius:5px;
+    padding:5px;
+}
+
+.character-content {
+    max-width:500px;
+    margin:auto;
+}

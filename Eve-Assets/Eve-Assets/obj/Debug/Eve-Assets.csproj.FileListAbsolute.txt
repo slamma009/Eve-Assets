@@ -129,3 +129,5 @@ C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\bin\System.Web.
 C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\obj\Debug\Eve-Assets.csprojResolveAssemblyReference.cache
 C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\obj\Debug\Eve-Assets.dll
 C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\obj\Debug\Eve-Assets.pdb
+C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\obj\Debug\Eve_Assets.Migrations.InitialCreate.resources
+C:\Users\alsnu\Documents\GitHub\Eve-Assets\Eve-Assets\Eve-Assets\obj\Debug\Eve-Assets.csproj.GenerateResource.Cache

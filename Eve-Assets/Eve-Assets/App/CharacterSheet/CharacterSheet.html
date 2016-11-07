@@ -1,13 +1,29 @@
-﻿<div ng-app="bang.characterSheet" ng-controller="CharacterSheetController">
+﻿<div ng-app="bang.characterSheet" ng-controller="CharacterSheetController" class="character-content">
+    <div class="character-row">
+        <div class="row">
+            <div class="col-xs-6">
+                <input type="text" ng-model="key.verificationCode" placeholder="Verification Code" style="width:100%" />
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-10">
+                    <input type="text" ng-model="key.keyCode" placeholder="Key Code" style="width:100%" />
+                </div>
+                <div class="col-xs-2">
+                    <i ng-click="addCharacter(key.keyCode, key.verificationCode)" class="fa fa-2x fa-plus-square"></i>
+                </div>
+            </div>
+        </div>
+    </div>
     <div ng-repeat="character in allCharacters">
-        <div class="row" style="margin:5px;">
+        <div class="row character-row" style="margin:5px;">
             <div class="col-xs-3">
                 <div style="width:100%; max-width:200px;">
                     <img src="https://image.eveonline.com/Character/{{character.CharacterId}}_256.jpg" width="100%" />
                 </div>
             </div>
             <div class="col-xs-9">
-                <p>{{character.CharacterName}}</p>
+                <h4>{{character.CharacterName}}</h4>
+                <p>{{character.CorpName}}</p>
             </div>
         </div>
     </div>

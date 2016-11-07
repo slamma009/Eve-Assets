@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="App\CharacterSheet\CharacterSheet.css" />
     <Content Include="App\CharacterSheet\CharacterSheet.html" />
     <Content Include="App\CharacterSheet\CharacterSheet.js" />
     <Content Include="App\DataAccess\characterDataAccess.js" />
@@ -142,6 +143,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611040350075_InitialCreate.cs" />
+    <Compile Include="Migrations\201611040350075_InitialCreate.Designer.cs">
+      <DependentUpon>201611040350075_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\MineralsRefined.cs" />
     <Compile Include="Models\Mineral.cs" />
@@ -169,6 +175,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611040350075_InitialCreate.resx">
+      <DependentUpon>201611040350075_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

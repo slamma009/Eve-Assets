@@ -30,6 +30,7 @@ namespace Eve_Assets.Controllers
                         var character = new Character();
                         character.CharacterName = reader.GetAttribute("name");
                         character.CharacterId = reader.GetAttribute("characterID");
+                        character.CorpName = reader.GetAttribute("corporationName");
                         returnList.Add(character);
                     }
                 }

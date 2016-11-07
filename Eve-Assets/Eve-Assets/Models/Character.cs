@@ -9,5 +9,6 @@ namespace Eve_Assets.Models
     {
         public string CharacterId { get; set; }
         public string CharacterName { get; set; }
+        public string CorpName { get; set; }
     }
 }
