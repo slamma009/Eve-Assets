@@ -11,15 +11,14 @@
     <!-- include: "type": "js", "files": "../App/**/*.js" -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="App/main.css">
-    <link rel="stylesheet" type="text/css" href="App/CharacterSheet/CharacterSheet.css">
+    <!-- include: "type": "css", "files": "../App/**/*.css" -->
 </head>
 <body ng-app="bang.app" ng-controller="AppCtrl">
     <div class="nav">
         <ul>
             <li><a href="#/">Main</a></li>
             <li><a href="#/Mining">Mining</a></li>
-            <li><a href="#/">Assets</a></li>
+            <li><a href="#/Assets">Assets</a></li>
         </ul>   
         <div style="float:right">
             <select name="characterSelect" id="characterSelect" ng-model="selectedCharacter">

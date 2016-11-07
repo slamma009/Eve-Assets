@@ -1,0 +1,14 @@
+﻿<div ng-app="bang.assetCalculator" ng-controller="AssetsController">
+    <div style="width:500px;" class="character-row center">
+        <h4>Select characters</h4>
+        <form>
+            <div class="character-item" ng-repeat="item in allCharacters track by $index">
+                {{item.CharacterName}}
+                &nbsp;
+                <input ng-model="selected[$index]" type="checkbox"/>
+            </div>
+        </form>
+        <button ng-click="calculate()" type="button" class="btn btn-primary" style="margin-top:10px;">Calculate</button>
+    </div>
+    <p>value: {{value}}</p>
+</div>

@@ -11,7 +11,7 @@ namespace Eve_Assets.Controllers
     public class CharacterController : ApiController
     {
         //URL for basic character info
-        private string APIurl = "https://api.eveonline.com/account/Characters.xml.aspx?keyID=KEYCODE&vCode=VERIFICATION";
+        private string APIurl = "https://api.eveonline.com/account/Characters.xml.aspx?keyID=VERIFICATION&vCode=KEYCODE";
 
         [HttpGet, Route("api/character/getCharacters")]
         public IEnumerable<Character> GetCharacter(string key, string code)
@@ -31,6 +31,8 @@ namespace Eve_Assets.Controllers
                         character.CharacterName = reader.GetAttribute("name");
                         character.CharacterId = reader.GetAttribute("characterID");
                         character.CorpName = reader.GetAttribute("corporationName");
+                        character.ApiKey = key;
+                        character.ApiCode = code;
                         returnList.Add(character);
                     }
                 }

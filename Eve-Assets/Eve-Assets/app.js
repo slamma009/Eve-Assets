@@ -1,6 +1,7 @@
 ﻿
 angular.module('bang.app', ['ngRoute'
     , 'bang.miningCalculators'
+    , 'bang.assetCalculator'
     , 'bang.dataAccess'
     , 'bang.characterSheet'
 ])
@@ -42,6 +43,9 @@ angular.module('bang.app', ['ngRoute'
     .when("/Mining", {
         templateUrl: "App/Mining/Mining.html"
     })
+    .when("/Assets", {
+        templateUrl: "App/Assets/Assets.html"
+    })
 })
 .controller('AppCtrl', function ($scope, characterService) {
     $scope.PageTitle = "Eve Assets";
@@ -50,7 +54,7 @@ angular.module('bang.app', ['ngRoute'
         $scope.allCharacters = characterService.list();
     });
 
-    $scope.$watch('selectedCharacter', function () {
-        characterService.select(selectedCharacter);
-    });
+    //$scope.$watch('selectedCharacter', function () {
+    //    characterService.select(selectedCharacter);
+    //});
 });

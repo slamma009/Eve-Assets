@@ -119,9 +119,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="App\Assets\Assets.css" />
+    <Content Include="App\Assets\Assets.html" />
+    <Content Include="App\Assets\Assets.js" />
     <Content Include="App\CharacterSheet\CharacterSheet.css" />
     <Content Include="App\CharacterSheet\CharacterSheet.html" />
     <Content Include="App\CharacterSheet\CharacterSheet.js" />
+    <Content Include="App\DataAccess\assetDataAccess.js" />
     <Content Include="App\DataAccess\characterDataAccess.js" />
     <Content Include="App\DataAccess\dataAcess.js" />
     <Content Include="App\DataAccess\oreDataAccess.js" />
@@ -138,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AssetController.cs" />
     <Compile Include="Controllers\CharacterController.cs" />
     <Compile Include="Controllers\OreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -149,6 +154,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Character.cs" />
+    <Compile Include="Models\CharacterDTO.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\MineralsRefined.cs" />
     <Compile Include="Models\Mineral.cs" />
     <Compile Include="Models\Ore.cs" />

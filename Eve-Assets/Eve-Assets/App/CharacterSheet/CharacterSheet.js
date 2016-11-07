@@ -25,7 +25,8 @@
 
         //if the list is empty, lets grab a list of them (temporarily hardcoded)
         if ($scope.allCharacters.length == 0) {
-            $scope.addCharacter("4481816","5zocklPRE98luK9Ddgndc2swjDk0C0v0TaZc7ih8t4uQAwV9axxmsjP2hFk5FvKK");
+            $scope.addCharacter("5zocklPRE98luK9Ddgndc2swjDk0C0v0TaZc7ih8t4uQAwV9axxmsjP2hFk5FvKK", "4481816");
+            $scope.addCharacter("LJk9KHxGZo6JYXvohZwrzcr6nLMCBPW1MykmUus15IuOKFoyT72ZnHlEVwhgHQsi", "1514612");
         }
     }]
 );
